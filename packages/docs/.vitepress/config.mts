@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Ming-UI",
   description: "MingUI",
-  base: '/Ming-UI/',
+  base: '/ming-ui/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
