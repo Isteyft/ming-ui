@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <MingButton />
+  <MingButton type="primary" size="small">a</MingButton>
 </template>
 
 <style scoped>

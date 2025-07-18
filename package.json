@@ -7,7 +7,7 @@
     "dev": "pnpm --filter @ming-ui/play dev",
     "docs:dev": "pnpm --filter @ming-ui/docs dev",
     "docs:build": "pnpm --filter @ming-ui/docs build",
-    "test": "echo \"todo\""
+    "test": "pnpm --filter @ming-ui/components test"
   },
   "keywords": [],
   "author": "",
