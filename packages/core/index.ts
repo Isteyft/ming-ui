@@ -7,5 +7,5 @@ import '@ming-ui/theme/index.css'
 library.add(fas);
 const installer = makeInstaller(components);
 
-export * from "@ming-ui/components";
+export * from "../components";
 export default installer;
