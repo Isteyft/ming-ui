@@ -1,6 +1,6 @@
 {
   "name": "baize-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Components library by Vue3 + TypeScript",
   "type": "module",
   "main": "./dist/umd/index.umd.cjs",
