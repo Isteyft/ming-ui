@@ -8,7 +8,7 @@ export default defineConfig({
         outDir: 'dist/umd',
         lib: {
             entry: resolve(__dirname, './index.ts'),
-            name: 'ming-ui',
+            name: 'baize-ui',
             fileName: 'index',
             formats: ['umd'],
         },

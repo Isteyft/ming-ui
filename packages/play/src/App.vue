@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <MingButton type="primary" size="small">a</MingButton>
+  <BaizeButton type="primary" size="small">a</BaizeButton>
 </template>
 
 <style scoped>

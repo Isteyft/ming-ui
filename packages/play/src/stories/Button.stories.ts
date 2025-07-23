@@ -1,14 +1,14 @@
 import type { Meta, StoryObj, ArgTypes } from "@storybook/vue3";
 import { fn, within, userEvent, expect } from "@storybook/test";
-import { MingButton, MingButtonGroup } from "ming-ui";
-// import "ming-ui/dist/theme/Button.css";
+import { BaizeButton, BaizeButtonGroup } from "baize-ui";
+// import "baize-ui/dist/theme/Button.css";
 
-type Story = StoryObj<typeof MingButton> & { argTypes?: ArgTypes };
+type Story = StoryObj<typeof BaizeButton> & { argTypes?: ArgTypes };
 
-const meta: Meta<typeof MingButton> = {
+const meta: Meta<typeof BaizeButton> = {
   title: "Example/Button",
-  component: MingButton,
-  subcomponents: { ButtonGroup: MingButtonGroup },
+  component: BaizeButton,
+  subcomponents: { ButtonGroup: BaizeButtonGroup },
   tags: ["autodocs"],
   argTypes: {
     type: {
@@ -69,12 +69,12 @@ export const Default: Story & { args: { content: string } } = {
     content: "Button",
   },
   render: (args:any) => ({
-    components: { MingButton },
+    components: { BaizeButton },
     setup() {
       return { args };
     },
     template: container(
-      `<ming-button v-bind="args">{{args.content}}</ming-button>`
+      `<baize-button v-bind="args">{{args.content}}</baize-button>`
     ),
   }),
   play: async ({ canvasElement, args, step }) => {
@@ -92,12 +92,12 @@ export const Circle: Story = {
     icon: "search",
   },
   render: (args:any) => ({
-    components: { MingButton },
+    components: { BaizeButton },
     setup() {
       return { args };
     },
     template: container(`
-      <ming-button circle v-bind="args"/>
+      <baize-button circle v-bind="args"/>
     `),
   }),
   play: async ({ canvasElement, args, step }) => {
@@ -140,15 +140,15 @@ export const Group: Story & { args: { content1: string; content2: string } } = {
     content2: "Button2",
   },
   render: (args:any) => ({
-    components: { MingButton, MingButtonGroup },
+    components: { BaizeButton, BaizeButtonGroup },
     setup() {
       return { args };
     },
     template: container(`
-       <ming-button-group :type="args.groupType" :size="args.groupSize" :disabled="args.groupDisabled">
-         <ming-button v-bind="args">{{args.content1}}</ming-button>
-         <ming-button v-bind="args">{{args.content2}}</ming-button>
-       </ming-button-group>
+       <baize-button-group :type="args.groupType" :size="args.groupSize" :disabled="args.groupDisabled">
+         <baize-button v-bind="args">{{args.content1}}</baize-button>
+         <baize-button v-bind="args">{{args.content2}}</baize-button>
+       </baize-button-group>
     `),
   }),
   play: async ({ canvasElement, args, step }) => {

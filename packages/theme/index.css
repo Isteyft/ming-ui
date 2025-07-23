@@ -2,66 +2,66 @@
 
 :root {
   /* colors */
-  --ming-color-white: #ffffff;
-  --ming-color-black: #000000;
+  --baize-color-white: #ffffff;
+  --baize-color-black: #000000;
   --colors: (primary: #409eff, success: #67c23a, warning: #e6a23c, danger: #f56c6c, info: #909399);
-  --ming-bg-color: #ffffff;
-  --ming-bg-color-page: #f2f3f5;
-  --ming-bg-color-overlay: #ffffff;
-  --ming-text-color-primary: #303133;
-  --ming-text-color-regular: #606266;
-  --ming-text-color-secondary: #909399;
-  --ming-text-color-placeholder: #a8abb2;
-  --ming-text-color-disabled: #c0c4cc;
-  --ming-border-color: #dcdfe6;
-  --ming-border-color-light: #e4e7ed;
-  --ming-border-color-lighter: #ebeef5;
-  --ming-border-color-extra-light: #f2f6fc;
-  --ming-border-color-dark: #d4d7de;
-  --ming-border-color-darker: #cdd0d6;
-  --ming-fill-color: #f0f2f5;
-  --ming-fill-color-light: #f5f7fa;
-  --ming-fill-color-lighter: #fafafa;
-  --ming-fill-color-extra-light: #fafcff;
-  --ming-fill-color-dark: #ebedf0;
-  --ming-fill-color-darker: #e6e8eb;
-  --ming-fill-color-blank: #ffffff;
+  --baize-bg-color: #ffffff;
+  --baize-bg-color-page: #f2f3f5;
+  --baize-bg-color-overlay: #ffffff;
+  --baize-text-color-primary: #303133;
+  --baize-text-color-regular: #606266;
+  --baize-text-color-secondary: #909399;
+  --baize-text-color-placeholder: #a8abb2;
+  --baize-text-color-disabled: #c0c4cc;
+  --baize-border-color: #dcdfe6;
+  --baize-border-color-light: #e4e7ed;
+  --baize-border-color-lighter: #ebeef5;
+  --baize-border-color-extra-light: #f2f6fc;
+  --baize-border-color-dark: #d4d7de;
+  --baize-border-color-darker: #cdd0d6;
+  --baize-fill-color: #f0f2f5;
+  --baize-fill-color-light: #f5f7fa;
+  --baize-fill-color-lighter: #fafafa;
+  --baize-fill-color-extra-light: #fafcff;
+  --baize-fill-color-dark: #ebedf0;
+  --baize-fill-color-darker: #e6e8eb;
+  --baize-fill-color-blank: #ffffff;
   
   @each $val, $color in var(--colors) {
-    --ming-color-$(val): $(color);
+    --baize-color-$(val): $(color);
     @for $i from 3 to 9 {
-      --ming-color-$(val)-light-$(i): mix(#fff, $(color), 0.$(i));
+      --baize-color-$(val)-light-$(i): mix(#fff, $(color), 0.$(i));
     }
-    --ming-color-$(val)-dark-2: mix(#000, $(color), 0.2);
+    --baize-color-$(val)-dark-2: mix(#000, $(color), 0.2);
   }
 
   /* border */
-  --ming-border-width: 1px;
-  --ming-border-style: solid;
-  --ming-border-color-hover: var(--ming-text-color-disabled);
-  --ming-border: var(--ming-border-width) var(--ming-border-style) var(--ming-border-color);
-  --ming-border-radius-base: 4px;
-  --ming-border-radius-small: 2px;
-  --ming-border-radius-round: 20px;
-  --ming-border-radius-circle: 100%;
+  --baize-border-width: 1px;
+  --baize-border-style: solid;
+  --baize-border-color-hover: var(--baize-text-color-disabled);
+  --baize-border: var(--baize-border-width) var(--baize-border-style) var(--baize-border-color);
+  --baize-border-radius-base: 4px;
+  --baize-border-radius-small: 2px;
+  --baize-border-radius-round: 20px;
+  --baize-border-radius-circle: 100%;
 
   /*font*/
-  --ming-font-size-extra-large: 20px;
-  --ming-font-size-large: 18px;
-  --ming-font-size-medium: 16px;
-  --ming-font-size-base: 14px;
-  --ming-font-size-small: 13px;
-  --ming-font-size-extra-small: 12px;
-  --ming-font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB',
+  --baize-font-size-extra-large: 20px;
+  --baize-font-size-large: 18px;
+  --baize-font-size-medium: 16px;
+  --baize-font-size-base: 14px;
+  --baize-font-size-small: 13px;
+  --baize-font-size-extra-small: 12px;
+  --baize-font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB',
     'Microsoft YaHei', '\5fae\8f6f\96c5\9ed1', Arial, sans-serif;
-  --ming-font-weight-primary: 500;
+  --baize-font-weight-primary: 500;
 
   /*disabled*/
-  --ming-disabled-bg-color: var(--ming-fill-color-light);
-  --ming-disabled-text-color: var(--ming-text-color-placeholder);
-  --ming-disabled-border-color: var(--ming-border-color-light);
+  --baize-disabled-bg-color: var(--baize-fill-color-light);
+  --baize-disabled-text-color: var(--baize-text-color-placeholder);
+  --baize-disabled-border-color: var(--baize-border-color-light);
 
   /*animation*/
-  --ming-transition-duration: 0.4s;
-  --ming-transition-duration-fast: 0.2s;
+  --baize-transition-duration: 0.4s;
+  --baize-transition-duration-fast: 0.2s;
 }

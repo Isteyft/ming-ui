@@ -64,7 +64,7 @@
   - 支持加载状态（`loading` 属性）。
   - 支持禁用状态（`disabled` 属性）。
   - 支持图标显示（`icon` 属性）。
-  - 支持按钮组（`<ming-button-group>`）。
+  - 支持按钮组（`<baize-button-group>`）。
   - 支持自定义元素标签（`tag` 属性）。
   - 支持节流模式（`useThrottle` 属性）。
 - **简单配置**：

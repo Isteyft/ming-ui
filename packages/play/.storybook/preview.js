@@ -1,4 +1,4 @@
-import '@ming-ui/theme/index.css'
+import '@baize-ui/theme/index.css'
 /** @type { import('@storybook/vue3').Preview } */
 const preview = {
   parameters: {

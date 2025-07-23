@@ -3,8 +3,8 @@
 layout: home
 
 hero:
-  name: "Ming-UI"
-  text: "MingUI"
+  name: "Baize-UI"
+  text: "BaizeUI"
   tagline: My great project tagline
   actions:
     - theme: brand

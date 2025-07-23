@@ -1,16 +1,16 @@
-.ming-icon {
-  --ming-icon-color: inherit;
+.baize-icon {
+  --baize-icon-color: inherit;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   position: relative;
   fill: currentColor;
-  color: var(--ming-icon-color);
+  color: var(--baize-icon-color);
   font-size: inherit;
 }
 
 @each $val in primary, info, success, warning, danger {
-  .ming-icon--$(val) {
-    --ming-icon-color: var(--ming-color-$(val));
+  .baize-icon--$(val) {
+    --baize-icon-color: var(--baize-color-$(val));
   }
 }

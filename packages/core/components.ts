@@ -1,6 +1,6 @@
-import {MingButton} from '@ming-ui/components'
+import {BaizeButton} from '@baize-ui/components'
 import type { Plugin } from 'vue'
 
 export default [
-  MingButton
+  BaizeButton
 ] as Plugin[]

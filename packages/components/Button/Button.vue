@@ -3,10 +3,10 @@ import { ref, computed, inject } from 'vue'
 import type { ButtonProps, ButtonEmits, ButtonInstance } from "./types";
 import { BUTTON_GROUP_CTX_KEY } from "./constants";
 import { throttle } from "lodash-es";
-import MingIcon from "../Icon/Icon.vue";
+import BaizeIcon from "../Icon/Icon.vue";
 // defineOptions   主要用于定义组件的选项，比如组件的名称（  name  ）、继承（  inheritAttrs  ）、自定义指令（  directives  ）等
 defineOptions({
-  name: 'MingButton'
+  name: 'BaizeButton'
 })
 //defineProps   用于定义组件的   props  ，即父组件传递给子组件的属性。
 const props = withDefaults(defineProps<ButtonProps>(), {
@@ -49,10 +49,10 @@ defineExpose<ButtonInstance>({
   <component
   :is="props.tag"
   :ref="_ref"
-  class="ming-button"
+  class="baize-button"
   :class="{
-    [`ming-button--${type}`]: type,
-    [`ming-button--${size}`]: size,
+    [`baize-button--${type}`]: type,
+    [`baize-button--${size}`]: size,
     'is-plain': plain,
     'is-round': round,
     'is-circle': circle,
@@ -68,7 +68,7 @@ defineExpose<ButtonInstance>({
   ">
     <template v-if="loading">
       <slot name="loading">
-        <ming-icon
+        <baize-icon
           class="loading-icon"
           :icon="loadingIcon ?? 'spinner'"
           :style="iconStyle"
@@ -77,7 +77,7 @@ defineExpose<ButtonInstance>({
         />
       </slot>
     </template>
-    <ming-icon
+    <baize-icon
       :icon="icon"
       size="1x"
       :style="iconStyle"
