@@ -1,5 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/vue3";
 import { BaizeCollapse, BaizeCollapseItem } from "baize-ui";
+import "baize-ui/dist/theme/Collapse.css";
 
 type Story = StoryObj<typeof BaizeCollapse>;
 
@@ -25,14 +26,14 @@ export const Default: Story = {
     <baize-collapse v-bind="args">
       <baize-collapse-item name="a" title="Title a">
         <div>this is content a</div>
-      </er-collapse-item>
+      </baize-collapse-item>
       <baize-collapse-item name="b" title="title b">
         <div>this is content b</div>
-      </er-collapse-item>
+      </baize-collapse-item>
       <baize-collapse-item name="c" title="title c  disable" disabled>
         <div>this is content c</div>
-      </er-collapse-item>
-    </er-collapse>
+      </baize-collapse-item>
+    </baize-collapse>
     `,
   }),
   args: {

@@ -2,17 +2,16 @@
 import type { CollapseProps, CollapseEmits, CollapseItemName } from './types';
 import { ref, provide, watch, watchEffect } from "vue";
 import { COLLAPSE_CTX_KEY } from './constants';
+import { debugWarn } from '@baize-ui/utils/error';
 
+
+const COMP_NAME = "BaizeCollapse" as const;
 defineOptions({
-  name: 'BaizeCollapse'
+  name: COMP_NAME
 })
 const props = defineProps<CollapseProps>()
 const emits = defineEmits<CollapseEmits>()
 const activeNames = ref<CollapseItemName[]>(props.modelValue)
-if (props.accordion && activeNames.value.length > 1) {
-    console.warn('[Baize]: Accordion mode only allows one active item at a time.')
-}
-
 function handleItemClick(item: CollapseItemName) {
     let _activeNames = [...activeNames.value]
     if (props.accordion) {
@@ -35,6 +34,12 @@ function updateActiveNames(newNames: CollapseItemName[]) {
     emits('change', newNames)
 }
 
+watchEffect(()=>{
+    if (props.accordion && activeNames.value.length > 1) {
+        debugWarn(COMP_NAME, "Accordion mode only allows one active item at a time.")
+    }
+})
+
 watch(
     () => props.modelValue, 
     (newNames) => {updateActiveNames(newNames)}
@@ -48,7 +53,7 @@ provide(COLLAPSE_CTX_KEY, {
 
 <template>
 
-<div class="baize-collasp">
+<div class="baize-collapse">
     <slot></slot>
 </div>
 

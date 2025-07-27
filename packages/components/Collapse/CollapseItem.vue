@@ -3,7 +3,7 @@ import type { CollapseItemProps } from './types';
 import { inject, computed } from "vue";
 import { COLLAPSE_CTX_KEY } from "./constants";
 import BaizeIcon from "../Icon/Icon.vue";
-// import transitionEvents from "./transitionEvents";
+import transitionEvents from "./transitionEvents";
 
 //定义组件名
 defineOptions({
@@ -46,13 +46,13 @@ class="baize-collapse-item"
     </span>
     <baize-icon icon="angle-right" class="header-angle" />
 </div>
-<!-- <transition name="slide" v-on="transitionEvents"> -->
+<transition name="slide" v-on="transitionEvents">
     <div class="baize-collapse-item__wapper" v-show="isActive">
     <div class="baize-collapse-item__content" :id="`item-content-${name}`">
         <slot></slot>
     </div>
     </div>
-<!-- </transition> -->
+</transition>
 </div>
 
 </template>

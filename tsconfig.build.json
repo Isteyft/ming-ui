@@ -22,15 +22,18 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
+    "types": ["node"],
+    "baseUrl": "./",
+    "paths": {
+      "@baize-ui/components": ["./packages/components"]
+    }
   },
   "include": [
-    // "env.d.ts",
+    "env.d.ts",
     "packages/core/index.ts",
     "packages/hooks/**/*.ts",
     "packages/utils/**/*.ts",
-    "packages/components/index.ts",
-    "packages/components/**/*.ts",
-    "packages/components/**/*.vue",
+    "packages/components/**/*.ts"
   ],
   "exclude": ["packages/components/vitest.config.ts","packages/components/index.test.ts"]
 }

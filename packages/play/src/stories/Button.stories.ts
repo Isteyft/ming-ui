@@ -1,7 +1,7 @@
 import type { Meta, StoryObj, ArgTypes } from "@storybook/vue3";
 import { fn, within, userEvent, expect } from "@storybook/test";
 import { BaizeButton, BaizeButtonGroup } from "baize-ui";
-// import "baize-ui/dist/theme/Button.css";
+import "baize-ui/dist/theme/Button.css";
 
 type Story = StoryObj<typeof BaizeButton> & { argTypes?: ArgTypes };
 
