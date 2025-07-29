@@ -5,7 +5,7 @@ import { omit } from "lodash-es";
 import { computed } from "vue";
 
 defineOptions({
-  name: "MIngIcon",
+  name: "BaizeIcon",
   inheritAttrs: false,
 });
 

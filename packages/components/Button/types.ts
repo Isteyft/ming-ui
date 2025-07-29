@@ -40,6 +40,6 @@ export interface ButtonEmits {
 export interface ButtonInstance {
   ref: Ref<HTMLButtonElement | void>;
   disabled: ComputedRef<boolean>;
-  size: ComputedRef<string>;
-  type: ComputedRef<string>;
+  size: ComputedRef<ButtonSize | "">;
+  type: ComputedRef<ButtonType | "">;
 }
