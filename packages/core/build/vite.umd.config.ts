@@ -3,10 +3,11 @@ import { readFileSync, readdir } from "fs";
 import { resolve } from "path";
 import { delay } from "lodash-es";
 import { compression } from "vite-plugin-compression2";
+import { visualizer } from "rollup-plugin-visualizer";
 
 import shell from "shelljs";
 import vue from "@vitejs/plugin-vue";
-import hooks from "../hooksPlugin";
+import hooks from "./hooksPlugin";
 import terser from "@rollup/plugin-terser";
 
 const TRY_MOVE_STYLES_DELAY = 800 as const;
@@ -26,7 +27,12 @@ function moveStyles() {
 export default defineConfig({
     plugins: [
         vue(), 
-        compression({include: /.(cjs|css)$/i,}),
+        visualizer({
+        filename: "dist/stats.umd.html",
+        }),
+        compression({
+            include: /.(cjs|css)$/i,
+        }),
         terser({
             compress: {
                 drop_console: ["log"],
