@@ -46,6 +46,7 @@
     "@rollup/plugin-terser": "^0.4.4",
     "terser": "^5.31.0",
     "@baize-ui/components": "workspace:*",
+    "rollup-plugin-visualizer": "^5.12.0",
     "vite-plugin-compression2": "^2.2.0",
     "vite-plugin-dts": "^3.9.1"
   },

@@ -1,8 +1,9 @@
-import { terser } from '@rollup/plugin-terser';
 import { defineConfig } from "vite";
 import { resolve } from 'path'
 import { readdirSync, readdir } from "fs";
 import { delay, defer, filter, map } from "lodash-es";
+import { visualize } from "rollup-plugin-visualizer";
+
 import vue from "@vitejs/plugin-vue"
 import dts from 'vite-plugin-dts'
 import shell from "shelljs";
@@ -35,6 +36,9 @@ function moveStyles() {
 export default defineConfig({
     plugins: [
         vue(), 
+        visualize({
+            filename: 'dist/stats.es.html',
+        }),
         dts({
             tsconfigPath: '../../tsconfig.build.json',
             outDir: 'dist/types',
@@ -83,7 +87,7 @@ export default defineConfig({
         minify: "terser",
         cssCodeSplit: true,
         lib: {
-            entry: resolve(__dirname, './index.ts'),
+            entry: resolve(__dirname, '../index.ts'),
             name: 'baize-ui',
             fileName: 'index',
             formats: ['es'],

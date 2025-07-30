@@ -27,5 +27,5 @@
     "packages/**/*.ts",
     "packages/**/*.tsx",
     "packages/**/*.vue"
-  ]
+, "vitest.config.ts"  ]
 }
