@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
-import { readFileSync, readdir } from "fs";
+import { readFileSync } from "fs";
 import { resolve } from "path";
 import { delay } from "lodash-es";
 import { compression } from "vite-plugin-compression2";
@@ -53,7 +53,7 @@ export default defineConfig({
     build:{
         outDir: 'dist/umd',
         lib: {
-            entry: resolve(__dirname, './index.ts'),
+            entry: resolve(__dirname, '../index.ts'),
             name: 'baize-ui',
             fileName: 'index',
             formats: ['umd'],
