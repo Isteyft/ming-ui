@@ -55,7 +55,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: "github", link: "https://isteyft.github.io/ming-ui/" },
+      { icon: "github", link: "https://isteyft.github.io/baize-ui/" },
     ],
   },
   markdown: {

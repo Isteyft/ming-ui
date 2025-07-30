@@ -4,7 +4,7 @@
   <baize-button
     type="primary"
     tag="a"
-    href="https://isteyft.github.io/ming-ui/"
+    href="https://isteyft.github.io/baize-ui/"
     target="_blank"
     rel="noopener noreferrer"
   >
