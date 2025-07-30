@@ -156,6 +156,9 @@ importers:
 
   packages/docs:
     devDependencies:
+      '@vitepress-demo-preview/component':
+        specifier: ^2.3.2
+        version: 2.5.1(vitepress@1.0.0-rc.44(@algolia/client-search@5.34.0)(@types/node@20.19.9)(@types/react@19.1.8)(async-validator@4.2.5)(postcss@8.5.6)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(search-insights@2.17.3)(terser@5.43.1)(typescript@5.8.3))(vue@3.5.17(typescript@5.8.3))
       '@vitepress-demo-preview/plugin':
         specifier: ^1.2.3
         version: 1.4.0(markdown-it-container@3.0.0)(vitepress@1.0.0-rc.44(@algolia/client-search@5.34.0)(@types/node@20.19.9)(@types/react@19.1.8)(async-validator@4.2.5)(postcss@8.5.6)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(search-insights@2.17.3)(terser@5.43.1)(typescript@5.8.3))(vue@3.5.17(typescript@5.8.3))
@@ -781,6 +784,15 @@ packages:
     engines: {node: '>=18'}
     cpu: [x64]
     os: [win32]
+
+  '@floating-ui/core@1.7.2':
+    resolution: {integrity: sha512-wNB5ooIKHQc+Kui96jE/n69rHFWAVoxn5CAzL1Xdd8FG03cgY3MLO+GF9U3W737fYDSgPWA6MReKhBQBop6Pcw==}
+
+  '@floating-ui/dom@1.1.1':
+    resolution: {integrity: sha512-TpIO93+DIujg3g7SykEAGZMDtbJRrmnYRCNYSjJlvIbGhBjRSNTLVbNeDQBrzy9qDgUbiWdc7KA0uZHZ2tJmiw==}
+
+  '@floating-ui/utils@0.2.10':
+    resolution: {integrity: sha512-aGTxbpbg8/b5JfU1HXSrbH3wXZuLPJcNEcZQFMxLs3oSzgtVu6nFPkbbGGUvBcUjKV2YyB9Wxxabo+HEH9tcRQ==}
 
   '@flypeng/tool@5.7.2':
     resolution: {integrity: sha512-qaK3JSXQeMXSR2IrySDCfUzZs2MCBQ1yLejzOJAuJ/0VXF8RCsSv/0VVby94ZUYABTXe9XqTGpCoKKUkMkT5Ew==}
@@ -1486,6 +1498,15 @@ packages:
     peerDependencies:
       vite: ^5.0.0 || ^6.0.0
       vue: ^3.2.25
+
+  '@vitepress-demo-preview/component@2.5.1':
+    resolution: {integrity: sha512-pDSKjNMWvoorLK+b7UJPAj0pSCCz+E+2E/rOlEGEHlM1wQgcr/LPOWn3UYrpcPnXyrblfy3uP2j51n4Ra12nww==}
+    peerDependencies:
+      vitepress: '*'
+      vue: ^3.2.0
+
+  '@vitepress-demo-preview/core@0.2.0':
+    resolution: {integrity: sha512-EjPzGcvklA8u4ALNIa0waWC8EcoouQn9RRocUE9ByGmI7bysKFZuCnsvEZyakA6MuFieXqBtsr2kuQV2fqpUtQ==}
 
   '@vitepress-demo-preview/plugin@1.4.0':
     resolution: {integrity: sha512-Kp17j2sRTlBfB5MNHmcec35RTzQkp+yVjW6Rjm8Qs0YJw0AJZ9lDVG65zXupWMj7IinF7GjoZUlY0Jx1SDgL5g==}
@@ -2457,6 +2478,15 @@ packages:
 
   find-package-json@1.2.0:
     resolution: {integrity: sha512-+SOGcLGYDJHtyqHd87ysBhmaeQ95oWspDKnMXBrnQ9Eq4OkLNqejgoaD8xVWu6GPa0B6roa6KinCMEMcVeqONw==}
+
+  floating-vue@5.2.2:
+    resolution: {integrity: sha512-afW+h2CFafo+7Y9Lvw/xsqjaQlKLdJV7h1fCHfcYQ1C4SVMlu7OAekqWgu5d4SgvkBVU0pVpLlVsrSTBURFRkg==}
+    peerDependencies:
+      '@nuxt/kit': ^3.2.0
+      vue: ^3.2.0
+    peerDependenciesMeta:
+      '@nuxt/kit':
+        optional: true
 
   focus-trap@7.6.5:
     resolution: {integrity: sha512-7Ke1jyybbbPZyZXFxEftUtxFGLMpE2n6A+z//m4CRDlj0hW+o3iYSmh8nFlYMurOiJVDmJRilUQtJr08KfIxlg==}
@@ -4572,6 +4602,14 @@ packages:
     peerDependencies:
       vue: '>=2'
 
+  vue-resize@2.0.0-alpha.1:
+    resolution: {integrity: sha512-7+iqOueLU7uc9NrMfrzbG8hwMqchfVfSzpVlCMeJQe4pyibqyoifDNbKTZvwxZKDvGkB+PdFeKvnGZMoEb8esg==}
+    peerDependencies:
+      vue: ^3.0.0
+
+  vue-sonner@2.0.2:
+    resolution: {integrity: sha512-cN6onnN6aBOZ56YWN8CMj6t4zqbz/XlenE+jx5z+mgduMMelFo6B6G+e2Q6hhxU9YFiV16MXG2MBPluZabyElQ==}
+
   vue-template-compiler@2.7.16:
     resolution: {integrity: sha512-AYbUWAJHLGGQM7+cNTELw+KsOG9nl2CnSv467WobS5Cv9uk3wFcnr1Etsz2sEIHEZvw1U+o9mRlEO6QbZvUPGQ==}
 
@@ -5227,6 +5265,16 @@ snapshots:
 
   '@esbuild/win32-x64@0.25.7':
     optional: true
+
+  '@floating-ui/core@1.7.2':
+    dependencies:
+      '@floating-ui/utils': 0.2.10
+
+  '@floating-ui/dom@1.1.1':
+    dependencies:
+      '@floating-ui/core': 1.7.2
+
+  '@floating-ui/utils@0.2.10': {}
 
   '@flypeng/tool@5.7.2':
     dependencies:
@@ -6002,6 +6050,20 @@ snapshots:
     dependencies:
       vite: 5.4.19(@types/node@20.19.9)(terser@5.43.1)
       vue: 3.5.17(typescript@5.8.3)
+
+  '@vitepress-demo-preview/component@2.5.1(vitepress@1.0.0-rc.44(@algolia/client-search@5.34.0)(@types/node@20.19.9)(@types/react@19.1.8)(async-validator@4.2.5)(postcss@8.5.6)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(search-insights@2.17.3)(terser@5.43.1)(typescript@5.8.3))(vue@3.5.17(typescript@5.8.3))':
+    dependencies:
+      '@vitepress-demo-preview/core': 0.2.0
+      floating-vue: 5.2.2(vue@3.5.17(typescript@5.8.3))
+      vitepress: 1.0.0-rc.44(@algolia/client-search@5.34.0)(@types/node@20.19.9)(@types/react@19.1.8)(async-validator@4.2.5)(postcss@8.5.6)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(search-insights@2.17.3)(terser@5.43.1)(typescript@5.8.3)
+      vue: 3.5.17(typescript@5.8.3)
+      vue-sonner: 2.0.2
+    transitivePeerDependencies:
+      - '@nuxt/kit'
+
+  '@vitepress-demo-preview/core@0.2.0':
+    dependencies:
+      '@flypeng/tool': 5.7.2
 
   '@vitepress-demo-preview/plugin@1.4.0(markdown-it-container@3.0.0)(vitepress@1.0.0-rc.44(@algolia/client-search@5.34.0)(@types/node@20.19.9)(@types/react@19.1.8)(async-validator@4.2.5)(postcss@8.5.6)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)(search-insights@2.17.3)(terser@5.43.1)(typescript@5.8.3))(vue@3.5.17(typescript@5.8.3))':
     dependencies:
@@ -7194,6 +7256,12 @@ snapshots:
       to-regex-range: 5.0.1
 
   find-package-json@1.2.0: {}
+
+  floating-vue@5.2.2(vue@3.5.17(typescript@5.8.3)):
+    dependencies:
+      '@floating-ui/dom': 1.1.1
+      vue: 3.5.17(typescript@5.8.3)
+      vue-resize: 2.0.0-alpha.1(vue@3.5.17(typescript@5.8.3))
 
   focus-trap@7.6.5:
     dependencies:
@@ -9473,6 +9541,12 @@ snapshots:
   vue-inbrowser-compiler-independent-utils@4.71.1(vue@3.5.17(typescript@5.8.3)):
     dependencies:
       vue: 3.5.17(typescript@5.8.3)
+
+  vue-resize@2.0.0-alpha.1(vue@3.5.17(typescript@5.8.3)):
+    dependencies:
+      vue: 3.5.17(typescript@5.8.3)
+
+  vue-sonner@2.0.2: {}
 
   vue-template-compiler@2.7.16:
     dependencies:
